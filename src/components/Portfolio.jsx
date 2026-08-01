@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
+import meetipImg from "../assets/projects/meetip-screenshot.png";
+import ahtImg from "../assets/projects/aht-screeshot.png";
+import crickgateImg from "../assets/projects/crickgate-screenshot.png";
+import skillserverImg from "../assets/projects/skillserve-screenshot.png";
+
 const projectData = [
   {
     title: "MeetIP",
@@ -14,26 +19,11 @@ const projectData = [
       "Designed responsive UI with JWT & Google OAuth authentication."
     ],
     tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Socket.IO", "WebRTC", "JWT"],
-    liveLink: "#",
-    githubLink: "https://github.com/nirajgharate",
+    liveLink: "https://meet-ip.vercel.app/",
+    githubLink: "https://github.com/nirajgharate/MeetIP",
     glowColor: "hover:border-indigo-500/40 hover:shadow-[0_20px_50px_rgba(99,102,241,0.15)]",
     iconColor: "text-indigo-400",
-    visual: (
-      <svg className="w-full h-full text-indigo-500/40 bg-slate-950/80" viewBox="0 0 200 110" fill="none">
-        <rect x="15" y="15" width="80" height="50" rx="6" className="stroke-slate-800 fill-slate-900/40" strokeWidth="1" />
-        <rect x="105" y="15" width="80" height="50" rx="6" className="stroke-slate-800 fill-slate-900/40" strokeWidth="1" />
-        <circle cx="55" cy="35" r="10" className="stroke-indigo-500/40 fill-indigo-950/20" strokeWidth="1" />
-        <circle cx="145" cy="35" r="10" className="stroke-cyan-500/40 fill-cyan-950/20" strokeWidth="1" />
-        <rect x="50" y="75" width="100" height="20" rx="10" className="stroke-slate-800 fill-slate-950" strokeWidth="1" />
-        <circle cx="65" cy="85" r="4" className="fill-slate-800 hover:fill-slate-700" />
-        <circle cx="82" cy="85" r="4" className="fill-slate-800 hover:fill-slate-700" />
-        <circle cx="100" cy="85" r="5" className="fill-rose-500/80 animate-pulse" />
-        <circle cx="118" cy="85" r="4" className="fill-slate-800 hover:fill-slate-700" />
-        <circle cx="135" cy="85" r="4" className="fill-slate-800 hover:fill-slate-700" />
-        <path d="M42 55 Q47 50 52 55 T62 55" className="stroke-indigo-400" strokeWidth="1" fill="none" />
-        <path d="M132 55 Q137 50 142 55 T152 55" className="stroke-cyan-400" strokeWidth="1" fill="none" />
-      </svg>
-    )
+    image: meetipImg
   },
   {
     title: "AI Homeroom Teacher (AHT)",
@@ -47,27 +37,11 @@ const projectData = [
       "Automated quiz generation, flashcards, and vector embedding notes."
     ],
     tags: ["React.js", "Node.js", "FastAPI", "LangChain", "RAG", "MongoDB", "Vector DB"],
-    liveLink: "#",
-    githubLink: "https://github.com/nirajgharate",
+    liveLink: "https://aht-one.vercel.app/",
+    githubLink: "https://github.com/nirajgharate/AHT",
     glowColor: "hover:border-cyan-500/40 hover:shadow-[0_20px_50px_rgba(6,182,212,0.15)]",
     iconColor: "text-cyan-400",
-    visual: (
-      <svg className="w-full h-full text-cyan-500/40 bg-slate-950/80" viewBox="0 0 200 110" fill="none">
-        <circle cx="100" cy="55" r="14" className="stroke-cyan-500/60 fill-cyan-950/40" strokeWidth="1" />
-        <circle cx="45" cy="30" r="8" className="stroke-violet-500/40 fill-violet-950/20" strokeWidth="1" />
-        <circle cx="155" cy="30" r="8" className="stroke-blue-500/40 fill-blue-950/20" strokeWidth="1" />
-        <circle cx="65" cy="85" r="9" className="stroke-emerald-500/40 fill-emerald-950/20" strokeWidth="1" />
-        <circle cx="135" cy="85" r="9" className="stroke-yellow-500/40 fill-yellow-950/20" strokeWidth="1" />
-        <path d="M45 30 L100 55 M155 30 L100 55 M65 85 L100 55 M135 85 L100 55" className="stroke-slate-800" strokeWidth="1" strokeDasharray="3 3" />
-        <circle cx="100" cy="55" r="18" className="stroke-cyan-500/20 animate-ping" strokeWidth="0.5" />
-        <circle cx="100" cy="55" r="3" className="fill-cyan-400" />
-        <circle cx="45" cy="30" r="2" className="fill-violet-400" />
-        <circle cx="155" cy="30" r="2" className="fill-blue-400" />
-        <text x="100" y="59" textAnchor="middle" className="fill-cyan-300 font-mono text-[6px] font-bold tracking-widest">RAG_RERANK</text>
-        <text x="45" y="44" textAnchor="middle" className="fill-slate-500 font-mono text-[5px]">PDF_CHAT</text>
-        <text x="155" y="44" textAnchor="middle" className="fill-slate-500 font-mono text-[5px]">YT_SUMMARY</text>
-      </svg>
-    )
+    image: ahtImg
   },
   {
     title: "CrickGate",
@@ -81,23 +55,11 @@ const projectData = [
       "Integrated Razorpay payments, voice interaction, booking history, and automated confirmations."
     ],
     tags: ["React.js", "Node.js", "Express.js", "FastAPI", "MongoDB", "LangGraph", "Gemini API", "Razorpay"],
-    liveLink: "#",
-    githubLink: "https://github.com/nirajgharate",
+    liveLink: "https://crick-gate.vercel.app/",
+    githubLink: "https://github.com/nirajgharate/CrickGate",
     glowColor: "hover:border-rose-500/40 hover:shadow-[0_20px_50px_rgba(244,63,94,0.15)]",
     iconColor: "text-rose-400",
-    visual: (
-      <svg className="w-full h-full text-rose-500/40 bg-slate-950/80" viewBox="0 0 200 110" fill="none">
-        <rect x="25" y="15" width="150" height="35" rx="8" className="stroke-slate-800 fill-slate-900/60" strokeWidth="1" />
-        <text x="38" y="30" className="fill-slate-400 font-mono text-[6px]">AI VOICE ASSISTANT</text>
-        <text x="38" y="42" className="fill-slate-100 font-mono text-[9px] font-bold">LANGGRAPH / GEMINI PRO</text>
-        <rect x="125" y="24" width="42" height="18" rx="4" className="fill-rose-950/30 stroke-rose-500/20" strokeWidth="0.5" />
-        <text x="146" y="31" textAnchor="middle" className="fill-rose-400 font-mono text-[5px] font-bold">RAZORPAY</text>
-        <text x="146" y="39" textAnchor="middle" className="fill-slate-300 font-mono text-[7px] font-black">200 OK</text>
-        <path d="M25 90 L50 82 L75 88 L100 70 L125 78 L150 62 L175 66" className="stroke-rose-500/40" strokeWidth="1.5" fill="none" />
-        <circle cx="150" cy="62" r="2.5" className="fill-rose-400" />
-        <circle cx="150" cy="62" r="5" className="stroke-rose-500/20 animate-ping" strokeWidth="0.5" />
-      </svg>
-    )
+    image: crickgateImg
   },
   {
     title: "Skillserver",
@@ -107,31 +69,15 @@ const projectData = [
     desc: "A decentralized peer-to-peer talent marketplace connecting developers and freelancers with automated contract agreements and project matching algorithms.",
     bullets: [
       "Built automated matching algorithms correlating developer tech stacks and project requirements.",
-      "Engineered secure contract agreements and milestone milestone tracking.",
+      "Engineered secure contract agreements and milestone tracking.",
       "Designed clean responsive dashboards using React.js, Express.js, MongoDB, and Tailwind CSS."
     ],
     tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
-    liveLink: "#",
-    githubLink: "https://github.com/nirajgharate",
+    liveLink: "https://synapthire.vercel.app/",
+    githubLink: "https://github.com/nirajgharate/Skill-Server",
     glowColor: "hover:border-emerald-500/40 hover:shadow-[0_20px_50px_rgba(16,185,129,0.15)]",
     iconColor: "text-emerald-400",
-    visual: (
-      <svg className="w-full h-full text-emerald-500/40 bg-slate-950/80" viewBox="0 0 200 110" fill="none">
-        <rect x="20" y="15" width="160" height="18" rx="6" className="stroke-slate-800 fill-slate-900/60" strokeWidth="1" />
-        <circle cx="32" cy="24" r="3" className="stroke-slate-600" strokeWidth="1" />
-        <line x1="34" y1="26" x2="38" y2="30" className="stroke-slate-600" strokeWidth="1" />
-        <text x="46" y="27" className="fill-slate-500 font-mono text-[6px]">Search Freelance Devs...</text>
-
-        <rect x="20" y="42" width="160" height="22" rx="4" className="stroke-slate-800 fill-slate-900/30" strokeWidth="1" />
-        <circle cx="35" cy="53" r="6" className="stroke-emerald-500/30 fill-emerald-950/20" strokeWidth="1" />
-        <text x="47" y="53" className="fill-slate-300 font-mono text-[6px] font-bold">Niraj (Full Stack)</text>
-        <rect x="135" y="48" width="38" height="10" rx="3" className="fill-emerald-950/40 border border-emerald-500/20" />
-        <text x="154" y="55" textAnchor="middle" className="fill-emerald-400 font-mono text-[5px] font-extrabold">98% MATCH</text>
-
-        <line x1="20" y1="80" x2="180" y2="80" className="stroke-slate-800" strokeWidth="1" />
-        <text x="20" y="94" className="fill-slate-500 font-mono text-[5.5px]">HOSTED_AGREEMENTS: 142 ACTIVE</text>
-      </svg>
-    )
+    image: skillserverImg
   },
   {
     title: "Wanderlust",
@@ -145,7 +91,7 @@ const projectData = [
       "Implemented responsive UI layouts and user session management."
     ],
     tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Mapbox API", "Tailwind CSS"],
-    liveLink: "#",
+    liveLink: "https://github.com/nirajgharate",
     githubLink: "https://github.com/nirajgharate",
     glowColor: "hover:border-violet-500/40 hover:shadow-[0_20px_50px_rgba(139,92,246,0.15)]",
     iconColor: "text-violet-400",
@@ -217,7 +163,7 @@ const Portfolio = () => {
           </div>
         </div>
 
-        {/* Projects Grid (3 cols on desktop, responsive layout) */}
+        {/* Projects Grid */}
         <motion.div 
           layout
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
@@ -235,10 +181,19 @@ const Portfolio = () => {
                 className={`group bg-slate-950/40 backdrop-blur-sm border border-slate-900/80 p-6 rounded-[2rem] flex flex-col justify-between transition-all duration-500 shadow-xl ${project.glowColor}`}
               >
                 <div>
-                  {/* Dynamic Diagram Header */}
+                  {/* Real Screenshot Preview Header */}
                   <div className="w-full aspect-video rounded-2xl bg-slate-950 border border-slate-900 overflow-hidden mb-6 relative flex items-center justify-center group-hover:border-slate-800 transition-colors duration-500">
-                    {project.visual}
-                    <div className="absolute top-2 right-2 px-2.5 py-1 rounded-full bg-slate-950/80 border border-slate-800 text-[8px] font-mono text-slate-400">
+                    {project.image ? (
+                      <img 
+                        src={project.image} 
+                        alt={`${project.title} Screenshot`}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 brightness-95 group-hover:brightness-100"
+                      />
+                    ) : (
+                      project.visual
+                    )}
+
+                    <div className="absolute top-2 right-2 px-2.5 py-1 rounded-full bg-slate-950/80 border border-slate-800 text-[8px] font-mono text-slate-300 backdrop-blur-md">
                       {project.date}
                     </div>
                   </div>
@@ -305,6 +260,8 @@ const Portfolio = () => {
                     
                     <a 
                       href={project.liveLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="flex-1 py-2.5 bg-slate-950 border border-slate-850 text-slate-300 rounded-xl hover:text-white hover:border-cyan-500/40 text-center text-xs font-bold transition-all hover:bg-slate-900 shadow-inner flex items-center justify-center gap-2"
                     >
                       <span>Live Demo</span>
