@@ -5,6 +5,8 @@ import meetipImg from "../assets/projects/meetip-screenshot.png";
 import ahtImg from "../assets/projects/aht-screeshot.png";
 import crickgateImg from "../assets/projects/crickgate-screenshot.png";
 import skillserverImg from "../assets/projects/skillserve-screenshot.png";
+import retailDeImg from "../assets/projects/retail-de-screenshot.jpg";
+import stockDeImg from "../assets/projects/stock-de-screenshot.jpg";
 
 const projectData = [
   {
@@ -109,6 +111,42 @@ const projectData = [
         <text x="122" y="82" className="fill-slate-500 font-mono text-[4.5px]">DIST: 4,120 km</text>
       </svg>
     )
+  },
+  {
+    title: "Retail Data Engineering",
+    subtitle: "End-to-End Batch & Streaming ETL Pipeline",
+    date: "Aug 2025 – Oct 2025",
+    category: "Data Engineering",
+    desc: "End-to-end retail data engineering pipeline ingesting transactional sales streams, transforming data with PySpark & Airflow, and building a scalable data lake on AWS.",
+    bullets: [
+      "Ingested real-time & batch retail transactional datasets using Apache Kafka and AWS S3.",
+      "Orchestrated complex ETL workflows with Apache Airflow for data cleansing and Star Schema modeling.",
+      "Processed large-scale datasets with PySpark and loaded analytics views into AWS Redshift & Snowflake."
+    ],
+    tags: ["Python", "PySpark", "Apache Kafka", "Apache Airflow", "AWS S3", "Redshift", "Snowflake", "Docker"],
+    liveLink: "https://github.com/nirajgharate/End-to-End-Retail-Data-Engineering-Project-1",
+    githubLink: "https://github.com/nirajgharate/End-to-End-Retail-Data-Engineering-Project-1",
+    glowColor: "hover:border-amber-500/40 hover:shadow-[0_20px_50px_rgba(245,158,11,0.15)]",
+    iconColor: "text-amber-400",
+    image: retailDeImg
+  },
+  {
+    title: "Stock Market ETL Pipeline",
+    subtitle: "Automated Real-Time Financial Data Pipeline",
+    date: "Nov 2025 – Dec 2025",
+    category: "Data Engineering",
+    desc: "Automated real-time stock market data pipeline streaming tick data via Kafka, running serverless ETL with AWS Glue & Lambda, and querying analytics via Athena.",
+    bullets: [
+      "Streamed real-time stock market data feeds using Apache Kafka deployed on AWS EC2.",
+      "Automated serverless ETL transformations using AWS Glue, Lambda, and AWS Glue Data Catalog.",
+      "Queried real-time market trends using Amazon Athena and created SQL analytics visualizations."
+    ],
+    tags: ["Python", "Apache Kafka", "AWS Glue", "AWS Lambda", "Amazon Athena", "AWS S3", "SQL", "Airflow"],
+    liveLink: "https://github.com/nirajgharate/stock-market-data-engineering-pipeline-with-automated-ETL-1",
+    githubLink: "https://github.com/nirajgharate/stock-market-data-engineering-pipeline-with-automated-ETL-1",
+    glowColor: "hover:border-emerald-500/40 hover:shadow-[0_20px_50px_rgba(16,185,129,0.15)]",
+    iconColor: "text-emerald-400",
+    image: stockDeImg
   }
 ];
 
@@ -147,7 +185,7 @@ const Portfolio = () => {
             data-aos-delay="200"
             className="flex bg-slate-950/60 p-1 rounded-full border border-slate-800/80 backdrop-blur-md justify-center w-max mx-auto mt-10 shadow-inner"
           >
-            {["All", "Generative AI", "Full Stack"].map((cat) => (
+            {["All", "Generative AI", "Full Stack", "Data Engineering"].map((cat) => (
               <button 
                 key={cat}
                 onClick={() => setFilter(cat)}
